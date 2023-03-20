@@ -29,10 +29,27 @@
   </div>
 </section>
 
+<button type="button" class="btn btn-primary">Primary</button>
+
 <section id="product1" class="section-p1">
   <h2>Featured Products</h2>
   <p>Summer collection new modern design</p>
   <div class="pro-container">
-    <app-featured-products></app-featured-products>
+    <div
+      class="col-3"
+      *ngFor="let featuredProducts of featuredProducts; let i = index"
+    >
+      <app-featured-products
+        [featureProductImage]="featuredProducts.image"
+        [featureProductBrand]="featuredProducts.brand"
+        [featureProductTitle]="featuredProducts.title"
+        [featureProductPrice]="featuredProducts.price"
+      ></app-featured-products>
+    </div>
   </div>
 </section>
+
+<!-- @Input() featureProductImage: any;
+@Input() featureProductTitle: any;
+@Input() featureProductBrand: any;
+@Input() featureProductPrice: any; -->

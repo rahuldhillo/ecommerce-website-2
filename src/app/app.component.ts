@@ -31,7 +31,6 @@ export class AppComponent {
     });
     this.featuredProductsService.getJSON().subscribe((data) => {
       this.featuredProducts = data;
-      console.log(this.featuredProducts);
     });
   }
 }

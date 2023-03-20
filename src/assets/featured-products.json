@@ -3,7 +3,7 @@
     {
       "brand": "adidas",
       "title": "Cartoon Astraunaut T-Shirt",
-      "image": "./img/products/f1.jpg",
+      "image": "./assets/img/products/f1.jpg",
       "ratings": "5",
       "description": "des",
       "price": "$90"
@@ -11,7 +11,7 @@
     {
       "brand": "adidas",
       "title": "Cartoon Astraunaut T-Shirt",
-      "image": "./img/products/f2.jpg",
+      "image": "./assets/img/products/f2.jpg",
       "ratings": "5",
       "description": "des",
       "price": "$120"
@@ -19,7 +19,7 @@
     {
       "brand": "adidas",
       "title": "Cartoon Astraunaut T-Shirt",
-      "image": "./img/products/f3.jpg",
+      "image": "./assets/img/products/f3.jpg",
       "ratings": "5",
       "description": "des",
       "price": "$105"
@@ -27,7 +27,7 @@
     {
       "brand": "adidas",
       "title": "Cartoon Astraunaut T-Shirt",
-      "image": "./img/products/f4.jpg",
+      "image": "./assets/img/products/f4.jpg",
       "ratings": "5",
       "description": "des",
       "price": "$85"
@@ -35,7 +35,7 @@
     {
       "brand": "adidas",
       "title": "Cartoon Astraunaut T-Shirt",
-      "image": "./img/products/f5.jpg",
+      "image": "./assets/img/products/f5.jpg",
       "ratings": "5",
       "description": "des",
       "price": "$95"
@@ -43,7 +43,7 @@
     {
       "brand": "adidas",
       "title": "Cartoon Astraunaut T-Shirt",
-      "image": "./img/products/f6.jpg",
+      "image": "./assets/img/products/f6.jpg",
       "ratings": "5",
       "description": "des",
       "price": "$135"
@@ -51,7 +51,7 @@
     {
       "brand": "adidas",
       "title": "Cartoon Astraunaut T-Shirt",
-      "image": "./img/products/f7.jpg",
+      "image": "./assets/img/products/f7.jpg",
       "ratings": "5",
       "description": "des",
       "price": "$125"
@@ -59,7 +59,7 @@
     {
       "brand": "adidas",
       "title": "Cartoon Astraunaut T-Shirt",
-      "image": "./img/products/f8.jpg",
+      "image": "./assets/img/products/f8.jpg",
       "ratings": "5",
       "description": "des",
       "price": "$100"

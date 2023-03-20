@@ -90,7 +90,6 @@
 
 #feature {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -98,4 +97,13 @@
 /* product */
 #product1 {
   text-align: center;
+}
+
+#product1 .pro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  flex-grow: 1;
 }
