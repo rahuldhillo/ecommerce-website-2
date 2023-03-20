@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBagShopping,
+  faShoppingCart,
+} from '@fortawesome/free-solid-svg-icons';
+import { FeaturedProductsService } from './services/featured-products.service';
 import { FeaturesService } from './services/features.service';
 
 @Component({
@@ -10,13 +15,23 @@ import { FeaturesService } from './services/features.service';
 export class AppComponent {
   title = 'ecommerce-website-2';
   features: any;
+  featuredProducts: any;
   faBagShopping = faBagShopping;
+  faStar = faStar;
+  faShopingCart = faShoppingCart;
 
-  constructor(private featuresService: FeaturesService) {}
+  constructor(
+    private featuresService: FeaturesService,
+    private featuredProductsService: FeaturedProductsService
+  ) {}
 
   ngOnInit() {
     this.featuresService.getJSON().subscribe((data) => {
       this.features = data;
+    });
+    this.featuredProductsService.getJSON().subscribe((data) => {
+      this.featuredProducts = data;
+      console.log(this.featuredProducts);
     });
   }
 }

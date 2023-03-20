@@ -6,9 +6,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './components/features/features.component';
+import { FeaturedProductsComponent } from './components/featured-products/featured-products.component';
 
 @NgModule({
-  declarations: [AppComponent, FeaturesComponent],
+  declarations: [AppComponent, FeaturesComponent, FeaturedProductsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -94,3 +94,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+/* product */
+#product1 {
+  text-align: center;
+}
