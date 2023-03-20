@@ -20,5 +20,11 @@
   <p>Save more with coupons $ up to 70% off!</p>
   <button>Shop Now</button>
 </section>
-
-<app-features></app-features>
+<section id="feature" class="section-p1">
+  <div *ngFor="let feature of features; let i = index">
+    <app-features
+      [featureImage]="feature.img"
+      [featureTitle]="feature.title"
+    ></app-features>
+  </div>
+</section>

@@ -85,3 +85,12 @@
   font-weight: 700;
   font-size: 15px;
 }
+
+/* feature */
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
