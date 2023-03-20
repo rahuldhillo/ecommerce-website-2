@@ -34,10 +34,11 @@
   <p>Summer collection new modern design</p>
   <div class="pro-container">
     <div
-      class="col-3"
+      class="col-lg-3 col-sm-6"
       *ngFor="let featuredProducts of featuredProducts; let i = index"
     >
       <app-featured-products
+        class="app-featured-products"
         [featureProductImage]="featuredProducts.image"
         [featureProductBrand]="featuredProducts.brand"
         [featureProductTitle]="featuredProducts.title"
