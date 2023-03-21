@@ -6,11 +6,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './components/features/features.component';
-import { FeaturedProductsComponent } from './components/featured-products/featured-products.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ProductsComponent } from './components/products/products.component';
 
 @NgModule({
-  declarations: [AppComponent, FeaturesComponent, FeaturedProductsComponent, HeaderComponent],
+  declarations: [
+    AppComponent,
+    FeaturesComponent,
+    HeaderComponent,
+    ProductsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

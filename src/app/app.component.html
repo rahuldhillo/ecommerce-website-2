@@ -22,13 +22,13 @@
   <h2>Featured Products</h2>
   <p>Summer collection new modern design</p>
   <div class="pro-container">
-    <app-featured-products
+    <app-products
       *ngFor="let featuredProduct of featuredProducts; let i = index"
-      [featuredProductImage]="featuredProduct.image"
-      [featuredProductBrand]="featuredProduct.brand"
-      [featuredProductTitle]="featuredProduct.title"
-      [featuredProductPrice]="featuredProduct.price"
-    ></app-featured-products>
+      [ProductImage]="featuredProduct.image"
+      [ProductBrand]="featuredProduct.brand"
+      [ProductTitle]="featuredProduct.title"
+      [ProductPrice]="featuredProduct.price"
+    ></app-products>
   </div>
 </section>
 
@@ -36,4 +36,18 @@
   <h4>Repair Services</h4>
   <h2>Up to <span>70% off</span> - All t-Shirts & Accesories</h2>
   <button class="normal">Explore More</button>
+</section>
+
+<section id="product1" class="section-p1">
+  <h2>New Arrivals</h2>
+  <p>Summer collection new modern design</p>
+  <div class="pro-container">
+    <app-products
+      *ngFor="let featuredProduct of featuredProducts; let i = index"
+      [ProductImage]="featuredProduct.image"
+      [ProductBrand]="featuredProduct.brand"
+      [ProductTitle]="featuredProduct.title"
+      [ProductPrice]="featuredProduct.price"
+    ></app-products>
+  </div>
 </section>

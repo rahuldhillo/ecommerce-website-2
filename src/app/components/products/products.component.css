@@ -54,7 +54,7 @@
   color: #088178;
 }
 
-:host .cart-icon {
+:host .shopping-cart-icon {
   position: absolute;
   display: flex;
   align-items: center;
