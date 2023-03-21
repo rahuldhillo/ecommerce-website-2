@@ -1,6 +1,14 @@
 import { Component } from '@angular/core';
 import { FeaturesService } from './services/features.service';
 import { ProductsService } from './services/products.service';
+import {
+  faTwitter,
+  faInstagramSquare,
+  faFacebook,
+  faPinterestP,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,6 +19,11 @@ export class AppComponent {
   features: any;
   featuredProducts: any;
   newArrivals: any;
+  faTwitter = faTwitter;
+  faFacebook = faFacebook;
+  faInstagramSquare = faInstagramSquare;
+  faPinterestP = faPinterestP;
+  faYoutube = faYoutube;
 
   constructor(
     private featuresService: FeaturesService,
