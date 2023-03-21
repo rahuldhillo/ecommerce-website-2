@@ -1,0 +1,13 @@
+<a href="#"><img src="../assets/img/logo.png" alt="logo" class="logo" /></a>
+<div>
+  <ul id="navbar-list">
+    <li *ngFor="let headerRouteTitle of headerRouteTitles; let i = index">
+      <a routerLink="{{ headerRouteTitle.route }}" routerLinkActive="active">{{
+        headerRouteTitle.route_title
+      }}</a>
+    </li>
+    <li id="cart-icon">
+      <a href="cart.html"><fa-icon [icon]="faBagShopping"></fa-icon></a>
+    </li>
+  </ul>
+</div>

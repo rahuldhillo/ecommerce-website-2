@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FeaturesService } from 'src/app/services/features.service';
 
 @Component({
   selector: 'app-features',

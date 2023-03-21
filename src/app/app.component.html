@@ -1,18 +1,7 @@
 <nav id="header">
-  <a href="#"><img src="../assets/img/logo.png" alt="logo" class="logo" /></a>
-  <div>
-    <ul id="navbar-list">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li id="cart-icon">
-        <a href="cart.html"><fa-icon [icon]="faBagShopping"></fa-icon></a>
-      </li>
-    </ul>
-  </div>
+  <app-header></app-header>
 </nav>
+
 <section id="hero">
   <h3>Trade-in-offer</h3>
   <h2>Super-value-deals</h2>
@@ -20,6 +9,7 @@
   <p>Save more with coupons $ up to 70% off!</p>
   <button>Shop Now</button>
 </section>
+
 <section id="feature" class="section-p1">
   <app-features
     *ngFor="let feature of features; let i = index"
@@ -33,11 +23,17 @@
   <p>Summer collection new modern design</p>
   <div class="pro-container">
     <app-featured-products
-      *ngFor="let featuredProducts of featuredProducts; let i = index"
-      [featureProductImage]="featuredProducts.image"
-      [featureProductBrand]="featuredProducts.brand"
-      [featureProductTitle]="featuredProducts.title"
-      [featureProductPrice]="featuredProducts.price"
+      *ngFor="let featuredProduct of featuredProducts; let i = index"
+      [featuredProductImage]="featuredProduct.image"
+      [featuredProductBrand]="featuredProduct.brand"
+      [featuredProductTitle]="featuredProduct.title"
+      [featuredProductPrice]="featuredProduct.price"
     ></app-featured-products>
   </div>
+</section>
+
+<section id="banner" class="section-m1">
+  <h4>Repair Services</h4>
+  <h2>Up to <span>70% off</span> - All t-Shirts & Accesories</h2>
+  <button>Explore More</button>
 </section>

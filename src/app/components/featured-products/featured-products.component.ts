@@ -10,9 +10,9 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 export class FeaturedProductsComponent {
   faStar = faStar;
   faShopingCart = faShoppingCart;
-  @Input() featureProductImage: any;
-  @Input() featureProductTitle: any;
-  @Input() featureProductBrand: any;
-  @Input() featureProductPrice: any;
-  @Input() featureProductRatings: any;
+  @Input() featuredProductImage: any;
+  @Input() featuredProductTitle: any;
+  @Input() featuredProductBrand: any;
+  @Input() featuredProductPrice: any;
+  @Input() featuredProductRatings: any;
 }

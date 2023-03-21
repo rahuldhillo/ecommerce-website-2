@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "route_title": "Home",
+      "route": "/"
+    },
+    {
+      "route_title": "Shop",
+      "route": "/shop"
+    },
+    {
+      "route_title": "Blog",
+      "route": "/blog"
+    },
+    {
+      "route_title": "About",
+      "route": "/about"
+    },
+    {
+      "route_title": "Contact",
+      "route": "/contact"
+    }
+  ]
+}
