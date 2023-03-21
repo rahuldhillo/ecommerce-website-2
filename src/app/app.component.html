@@ -21,34 +21,23 @@
   <button>Shop Now</button>
 </section>
 <section id="feature" class="section-p1">
-  <div *ngFor="let feature of features; let i = index">
-    <app-features
-      [featureImage]="feature.img"
-      [featureTitle]="feature.title"
-    ></app-features>
-  </div>
+  <app-features
+    *ngFor="let feature of features; let i = index"
+    [featureImage]="feature.img"
+    [featureTitle]="feature.title"
+  ></app-features>
 </section>
 
 <section id="product1" class="section-p1">
   <h2>Featured Products</h2>
   <p>Summer collection new modern design</p>
   <div class="pro-container">
-    <div
-      class="col-lg-3 col-sm-6"
+    <app-featured-products
       *ngFor="let featuredProducts of featuredProducts; let i = index"
-    >
-      <app-featured-products
-        class="app-featured-products"
-        [featureProductImage]="featuredProducts.image"
-        [featureProductBrand]="featuredProducts.brand"
-        [featureProductTitle]="featuredProducts.title"
-        [featureProductPrice]="featuredProducts.price"
-      ></app-featured-products>
-    </div>
+      [featureProductImage]="featuredProducts.image"
+      [featureProductBrand]="featuredProducts.brand"
+      [featureProductTitle]="featuredProducts.title"
+      [featureProductPrice]="featuredProducts.price"
+    ></app-featured-products>
   </div>
 </section>
-
-<!-- @Input() featureProductImage: any;
-@Input() featureProductTitle: any;
-@Input() featureProductBrand: any;
-@Input() featureProductPrice: any; -->

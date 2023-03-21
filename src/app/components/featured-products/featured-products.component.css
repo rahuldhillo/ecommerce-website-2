@@ -1,4 +1,5 @@
-.pro {
+:host {
+  display: inline-block;
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
@@ -11,49 +12,49 @@
   position: relative;
 }
 
-.pro:hover {
+:host:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
-.pro img {
+:host img {
   width: 100%;
   border-radius: 20px;
 }
 
-.pro .des {
+:host .des {
   text-align: start;
   padding: 10px 0;
 }
 
-.pro .des span {
+:host.des span {
   color: #606063;
   font-size: 12px;
 }
 
-.pro .des h5 {
+:host .des h5 {
   padding-top: 7px;
   color: #1a1a1a;
   font-size: 14px;
   padding-bottom: 7px;
 }
 
-.pro .des fa-icon {
+:host .des fa-icon {
   font-size: 12px;
   color: rgb(243, 181, 25);
 }
 
-.pro a fa-icon {
+:host a fa-icon {
   color: black;
 }
 
-.pro .des h4 {
+:host .des h4 {
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
   color: #088178;
 }
 
-.pro .cart-icon {
+:host .cart-icon {
   position: absolute;
   display: flex;
   align-items: center;
