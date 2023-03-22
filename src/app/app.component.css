@@ -50,7 +50,7 @@
 }
 
 /* product */
-#product1 {
+#products {
   text-align: center;
 }
 
@@ -317,7 +317,7 @@ footer .copyright {
     justify-content: center;
   }
 
-  #product1 .pro-container {
+  #products .pro-container {
     justify-content: center;
   }
 
