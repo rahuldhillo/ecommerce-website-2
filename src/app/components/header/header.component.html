@@ -1,6 +1,6 @@
 <a href="#"><img src="../assets/img/logo.png" alt="logo" class="logo" /></a>
 <div>
-  <ul id="navbar-list" #navbarRef>
+  <ul id="navbar-list" #navbarRef [ngClass]="{ active: showBar }">
     <li *ngFor="let headerRouteTitle of headerRouteTitles; let i = index">
       <a routerLink="{{ headerRouteTitle.route }}" routerLinkActive="active">{{
         headerRouteTitle.route_title
@@ -9,9 +9,12 @@
     <li id="cart-bag-icon">
       <a href="cart.html"><fa-icon [icon]="faBagShopping"></fa-icon></a>
     </li>
+    <a href="#" id="close" (click)="onCloseClick()">
+      <fa-icon [icon]="faTimes"></fa-icon>
+    </a>
   </ul>
 </div>
 <div id="mobile">
   <a href="cart.html"><fa-icon [icon]="faBagShopping"></fa-icon></a>
-  <fa-icon id="bar" #barRef [icon]="faOutdent"></fa-icon>
+  <fa-icon id="bar" #barRef [icon]="faOutdent" (click)="onBarClick()"></fa-icon>
 </div>

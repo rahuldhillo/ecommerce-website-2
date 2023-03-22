@@ -52,6 +52,14 @@
   align-items: center;
 }
 
+#close {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #222;
+  font-size: 24px;
+}
+
 /* media-query */
 @media (max-width: 799px) {
   #navbar-list {
@@ -67,9 +75,10 @@
     background-color: #e3e6f3;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
+    transition: 0.3s;
   }
-  #navbar-list.active {
-    right: 0px;
+  .active {
+    right: 0px !important;
   }
   #navbar-list li {
     margin-bottom: 25px;
