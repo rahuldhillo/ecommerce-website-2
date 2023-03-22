@@ -25,3 +25,16 @@
   color: #088178;
   background-color: #fddde4;
 }
+
+@media (max-width: 799px) {
+  :host {
+    margin: 15px 15px;
+  }
+}
+
+@media (max-width: 477px) {
+  :host {
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+}

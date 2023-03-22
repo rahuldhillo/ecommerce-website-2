@@ -24,9 +24,7 @@ export class HeaderComponent {
   constructor(
     private headerService: HeaderService,
     private renderer: Renderer2
-  ) {
-    this.mediaQueryList = window.matchMedia('(max-width: 799px)');
-  }
+  ) {}
 
   ngOnInit() {
     this.headerService.getJSON().subscribe((data) => {
@@ -34,21 +32,12 @@ export class HeaderComponent {
     });
   }
 
-  /*  ngAfterViewInit() {
-    const bar = this.barRef?.nativeElement;
-    const navbar = this.navbarRef?.nativeElement;
-
-    if (bar) {
-      console.log('bar click');
-      this.renderer.listen(bar, 'click', () => {
-        this.renderer.addClass(navbar, 'active');
-      });
-    }
-  }
-*/
-
   onBarClick() {
     this.showBar = true;
     console.log('Click');
+  }
+
+  onCloseClick() {
+    this.showBar = false;
   }
 }

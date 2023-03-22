@@ -21,6 +21,7 @@
 
 #cart-bag-icon {
   padding: 0 0 2px 20px !important;
+  display: initial;
 }
 
 #navbar-list li a {
@@ -60,6 +61,10 @@
   font-size: 24px;
 }
 
+#close {
+  display: none;
+}
+
 /* media-query */
 @media (max-width: 799px) {
   #navbar-list {
@@ -91,5 +96,22 @@
     color: #1a1a1a;
     font-size: 24px;
     padding-left: 20px;
+  }
+  #close {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+  #cart-bag-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 477px) {
+  :host {
+    padding: 10px 30px;
   }
 }
