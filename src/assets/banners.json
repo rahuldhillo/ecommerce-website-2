@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "tile": "Crazy Deals",
+      "tagLine": "Buy 1 Get 1 Free",
+      "details": "The best classic dress is on sale at Cara",
+      "image": "../assets/img/banner/b17.jpg",
+      "button": true,
+      "buttonText": "Learn More",
+      "size": "large"
+    },
+    {
+      "tile": "Spring/ Summer",
+      "tagLine": "Upcoming Season",
+      "details": "The best classic dress is on sale at Cara",
+      "image": "../assets/img/banner/b10.jpg",
+      "button": true,
+      "buttonText": "Learn More",
+      "size": "large"
+    }
+  ]
+}

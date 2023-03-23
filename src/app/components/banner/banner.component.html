@@ -1,5 +1,10 @@
-<img [src]="bannerImage" alt="Banner Image" class="banner-image" />
-<ng-content select="h4"></ng-content>
-<ng-content select="h2"></ng-content>
-<ng-content select="span"></ng-content>
-<ng-content select="button"></ng-content>
+<div
+  class="banner-image"
+  [style.background-image]="'url(' + bannerImage + ')'"
+></div>
+<div class="banner-content">
+  <ng-content select="h4"></ng-content>
+  <ng-content select="h2"></ng-content>
+  <ng-content select="span"></ng-content>
+  <ng-content select="button"></ng-content>
+</div>

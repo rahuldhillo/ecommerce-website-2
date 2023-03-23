@@ -8,6 +8,7 @@ import {
   faPinterestP,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
+import { BannerService } from './services/banner.service';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ export class AppComponent {
   features: any;
   featuredProducts: any;
   newArrivals: any;
+  banners: any;
   faTwitter = faTwitter;
   faFacebook = faFacebook;
   faInstagramSquare = faInstagramSquare;
@@ -27,7 +29,8 @@ export class AppComponent {
 
   constructor(
     private featuresService: FeaturesService,
-    private productsService: ProductsService
+    private productsService: ProductsService,
+    private bannerService: BannerService
   ) {}
 
   ngOnInit() {
@@ -39,6 +42,9 @@ export class AppComponent {
     });
     this.productsService.getNewArrivals().subscribe((data) => {
       this.newArrivals = data;
+    });
+    this.bannerService.getBanners().subscribe((data) => {
+      this.banners = data;
     });
   }
 }
