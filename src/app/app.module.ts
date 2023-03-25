@@ -11,6 +11,8 @@ import { ProductsComponent } from './components/products/products.component';
 import { ShopPageComponent } from './components/shop-page/shop-page.component';
 import { BannerComponent } from './components/banner/banner.component';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 @NgModule({
   declarations: [
     AppComponent,
