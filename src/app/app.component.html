@@ -84,7 +84,7 @@
 
 <!-- sample -->
 
-<section id="sm-banner" class="section-p1">
+<!-- <section id="sm-banner" class="section-p1">
   <app-banner
     *ngFor="let banner of banners; let i = index"
     [bannerImage]="banner.image"
@@ -93,6 +93,20 @@
     <h2>{{ banner.tagLine }}</h2>
     <span>{{ banner.details }}</span>
     <button class="white">{{ banner.buttonText }}</button>
+  </app-banner>
+</section> -->
+
+<section id="sm-banner" class="section-p1">
+  <app-banner
+    *ngFor="let banner of banners; let i = index"
+    [bannerImage]="banner.image"
+    [style]="banner.style"
+    [h4]="banner.h4"
+    [h2]="banner.h2"
+    [span]="banner.span"
+    [button]="banner.button"
+    [buttonText]="banner.buttonText"
+  >
   </app-banner>
 </section>
 

@@ -1,4 +1,4 @@
-<div
+<!-- <div
   class="banner-image"
   [style.background-image]="'url(' + bannerImage + ')'"
 ></div>
@@ -7,4 +7,26 @@
   <ng-content select="h2"></ng-content>
   <ng-content select="span"></ng-content>
   <ng-content class="button" select="button"></ng-content>
+</div> -->
+
+<div
+  class="banner-image"
+  [style.background-image]="'url(' + bannerImage + ')'"
+  [ngStyle]="style"
+></div>
+<div class="banner-content">
+  <ng-container *ngIf="style?.h4"
+    ><h4
+      [style.color]="style.h4.color"
+      [style.fontSize]="style.h4.fontSize"
+      [style.fontWeight]="style.h4.fontWeight"
+    >
+      <ng-content select="h4"></ng-content>
+    </h4>
+  </ng-container>
+  <ng-container *ngIf="style?.h2">{{ h2 }}</ng-container>
+  <ng-container *ngIf="span">{{ span }}</ng-container>
+  <ng-container *ngIf="button">
+    <button class="white">{{ buttonText }}</button>
+  </ng-container>
 </div>
