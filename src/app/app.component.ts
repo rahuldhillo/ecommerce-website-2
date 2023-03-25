@@ -9,6 +9,7 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import { BannerService } from './services/banner.service';
+import { LocalizationService } from './internationalization/localization.service';
 
 @Component({
   selector: 'app-root',
@@ -27,11 +28,18 @@ export class AppComponent {
   faPinterestP = faPinterestP;
   faYoutube = faYoutube;
 
+  language: string = 'en-US';
+
   constructor(
     private featuresService: FeaturesService,
     private productsService: ProductsService,
-    private bannerService: BannerService
+    private bannerService: BannerService,
+    private localizationService: LocalizationService
   ) {}
+
+  get name(): string {
+    return this.localizationService.translate('banner.world');
+  }
 
   ngOnInit() {
     this.featuresService.getJSON().subscribe((data) => {
@@ -46,5 +54,11 @@ export class AppComponent {
     this.bannerService.getBanners().subscribe((data) => {
       this.banners = data;
     });
+  }
+
+  onSelect(lang: string): void {
+    localStorage.setItem('language', lang);
+    this.localizationService.initService();
+    console.log(lang);
   }
 }
