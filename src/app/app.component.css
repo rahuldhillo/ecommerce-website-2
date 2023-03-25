@@ -64,14 +64,14 @@
 
 /* banner */
 #banner {
+  width: 100%;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-image: url(../assets/img/banner/b2.jpg);
-  width: 100%;
-  height: 40vh;
   background-size: cover;
   background-position: center;
 }
@@ -103,16 +103,16 @@
 }
 
 #sm-banner .banner-box {
+  min-width: 580px;
+  height: 50vh;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background-image: url(../assets/img/banner/b17.jpg);
-  min-width: 580px;
-  height: 50vh;
   background-size: cover;
   background-position: center;
-  padding: 30px;
 }
 
 #sm-banner .banner-box2 {
@@ -308,13 +308,6 @@ footer .copyright {
 }
 
 /* tryout */
-#sm-banner .banner-box-new {
-  min-width: 580px;
-  height: 50vh;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
 
 #sm-banner .banner-box-new h4 {
   color: #fff;
@@ -336,7 +329,7 @@ footer .copyright {
   padding-bottom: 15px;
 }
 
-#sm-banner .banner-box-new:hover button {
+#sm-banner app-banner:hover button {
   background: #088178;
   border: 1px solid #088178;
 }

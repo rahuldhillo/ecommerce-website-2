@@ -1,26 +1,31 @@
 :host {
-  padding: 0;
-  margin: 0;
+  min-width: 580px;
+  height: 50vh;
+  position: relative;
 }
 
 .banner-image {
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  background-repeat: no-repeat;
   z-index: -1;
-  position: absolute;
   padding: 0;
   margin: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .banner-content {
-  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
   z-index: 1;
   top: 0;
   left: 0;
   margin: 0;
-  padding: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
 }
